@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-timetable">
+        <form action="">
+            <div class="input-subject">
+                <label for="">Môn học:</label>
+                <input type="text" id="subject"> <br>
+            </div>
+
+            <div class="input-teacher">
+                <label for="">Tên gv:</label>
+                <input type="text" id="teacher"> <br>
+            </div>
+
+            <div class="input-classroom">
+                <label for="">Phòng học:</label>
+                <input type="text" id="classroom"> <br>
+            </div>
+
+            <div class="start-period">
+                <label for="">Tiết bắt đầu:</label>
+                <input type="text" id="start-period"> <br>
+            </div>
+
+            <div class="end-period">
+                <label for="">Tiết kết thúc:</label>
+                <input type="text" id="end-period" > <br>
+            </div>
+
+            <div class="input-day">
+                <label for="">Ngày học:</label>
+                <select name="" id="day">
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                </select>
+            </div>
+
+            <div class="btn">
+                <input class="clear-btn" type="button" value="Xóa bảng">
+                <input class="accept-btn" type="button" value="Xác nhận" onclick="getInfo()">
+            </div>
+        </form>
+        <table id="timetable"></table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
